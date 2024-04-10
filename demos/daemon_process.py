@@ -11,7 +11,7 @@ class P1:
     
     def hello(self):
         print('hello')
-        p3 = multiprocessing.Process(target=self.hi, daemon=True)
+        p3 = multiprocessing.Process(target=self.hi)
 
         p3.start()
         p3.join()
@@ -21,7 +21,7 @@ class P1:
 
     def start(self):
         p1 = multiprocessing.Process(target=self.hello)
-        p2 = multiprocessing.Process(target=self.hi, daemon=True)
+        p2 = multiprocessing.Process(target=self.hi)
 
         p1.start()
         p1.join()
