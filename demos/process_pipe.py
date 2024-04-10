@@ -1,5 +1,5 @@
 """
-两个进程的管道数据读写交换
+use pipe to exchange data between parent process and child process
 """
 import pickle
 import multiprocessing
